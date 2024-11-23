@@ -52,7 +52,7 @@ export function BankList(){
                 goTo("/balance")
             }else{
                 setIsLoading(false)
-                const json = (await response.json())
+                await response.json()
             }
         }catch(error){
 
