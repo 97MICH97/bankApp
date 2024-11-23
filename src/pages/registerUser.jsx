@@ -21,8 +21,8 @@ export function RegisterUser({value}){
                 method: "POST",
                 headers:{
                     "Content-Type" : "application/json",
-                    'Access-Control-Allow-Origin', 'https://bankapptest97.netlify.app',
-                    'Access-Control-Allow-Credentials', 'true'
+                    'Access-Control-Allow-Origin' : 'https://bankapptest97.netlify.app',
+                    'Access-Control-Allow-Credentials': 'true'
                 },
                 body: JSON.stringify({
                     username: email, 
