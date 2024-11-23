@@ -19,6 +19,7 @@ export function App({value}){
         setIsLoading(true);
         try{
             const response = await fetch(`${API_URL}/login`,{
+                mode: 'no-cors',
                 method: "POST",
                 headers:{
                     "Content-Type" : "application/json"
