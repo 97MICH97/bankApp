@@ -17,6 +17,8 @@ export function RegisterUser({value}){
     async function registerUser(email, password) {
         setIsLoading(true)
         try{
+              headers.append('Access-Control-Allow-Origin', 'https://bankapptest97.netlify.app');
+              headers.append('Access-Control-Allow-Credentials', 'true');
             const response = await fetch(`${API_URL}/signup`,{
                 method: "POST",
                 headers:{
