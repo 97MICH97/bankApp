@@ -1,1 +1,1 @@
-export const API_URL ="https://main.d1zopfgprsbcqh.amplifyapp.com/app/api"
+export const API_URL ="https://localhost:5000/app/api"
